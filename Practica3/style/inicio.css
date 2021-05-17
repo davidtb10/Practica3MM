@@ -1,0 +1,90 @@
+body {
+    text-align: center;
+}
+
+#tituloNavbar {
+    color: crimson;
+    font-size: 45px;
+}
+
+.banner img {
+    width: 100%;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.titulo {
+    background-color: crimson;
+    text-align: center;
+    padding: 7px;
+    margin-bottom: 0;
+}
+
+.separador {
+    size: 2px;
+    color: black;
+}
+
+p {
+    text-align: justify;
+}
+
+.banner {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+.bienvenida {
+    padding-top: 20px;
+}
+
+.bienvenida img {
+    width: auto;
+    max-height: 350px;
+    padding: 40px 0 40px 0;
+}
+
+.divCarousel {
+    height: 50%;
+}
+
+.list {
+    text-align: left;
+    display: inline-block;
+}
+
+.principal {
+    background-color: #d5d5d5;
+}
+
+.info {
+    padding: 40px 0 40px 0;
+    display: inline-flex;
+}
+
+.informacion table {
+    margin-top: 40px;
+}
+
+.carousel-control-prev {
+    background-image: url('../resoruces/anterior.png');
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.carousel-control-next {
+    background-image: url('../resoruces/proximo.png');
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#myCarousel{
+    padding-bottom:40px;
+}
+.carousel-item img {
+    height: 300px;
+}

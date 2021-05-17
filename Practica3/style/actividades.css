@@ -1,0 +1,108 @@
+
+body{
+    background-color: aliceblue;
+    text-align: center;
+}
+
+#tituloNavbar {
+    color: crimson;
+    font-size: 45px;
+}
+.titulo {
+    background-color: crimson;
+    text-align: center;
+    padding: 7px;
+    margin-bottom: 0;
+}
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.place-title {
+    color: crimson;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.place-text{
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding-top: 10px;
+}
+
+.place-url {
+    text-align: center;
+}
+.place-img-top {
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+}
+
+.horarioYprecio{
+    height: min-content;
+    width: 50%;
+    text-align: center;
+    display: block;
+    margin: auto;
+}
+
+
+.horario {
+    color: crimson;
+    text-align: center;
+}
+.precio{
+    color: crimson;
+    text-align: center;
+}
+
+.principal {
+    display: block;
+    margin: auto;
+    background-color: #d5d5d5;
+}
+.col1 {
+    padding-right: 3px;
+}
+
+.col2 {
+    padding-left: 3px;
+}
+
+.col3 {
+    padding-left: 3px;
+}
+
+.list-title {
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.list {
+    text-align: justify;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.rating{
+    margin:10px auto;
+}
+.ratingIndividual{
+    margin-left: 0;
+}
+.user{
+    text-align: left;
+}
+.center{
+    font-family: "Comic Sans MS";
+}
+.card-body{
+    text-align: justify;
+}
+.info{
+    text-align: justify;
+}
