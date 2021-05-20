@@ -106,3 +106,7 @@ body{
 .info{
     text-align: justify;
 }
+
+caption {
+    text-indent:-999em
+}

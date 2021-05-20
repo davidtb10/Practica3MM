@@ -88,3 +88,7 @@ p {
 .carousel-item img {
     height: 300px;
 }
+
+caption {
+    text-indent:-999em
+}
