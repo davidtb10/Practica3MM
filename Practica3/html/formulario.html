@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang=“es”>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sitios de Interés</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.css">
+    <link rel="stylesheet" type="text/css" href="../style/actividades.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" id='tituloNavbar' href="index.html">V I G O</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarSitios" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Actividades
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="survival.html" lang="en">Survival Human</a>
+                            <a class="dropdown-item" href="automovil.html">XXX Salón del automóvil de Vigo</a>
+                            <a class="dropdown-item" href="nacion.html">Vigo Nación!</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item active" href="formulario.html">Servicio de alertas de nuevas
+                                actividades<span class="sr-only">(current)</span></a>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <h1 class="titulo"><strong>Servicio de alertas de nuevas actividades</strong></h1>
+
+    <div class="container principal">
+        <br>
+        <div class=' row'>
+            <div class="col">
+                <h2><strong>Formulario:</strong></h2>
+                <div class=' row'>
+                    <p>Rellena el siguiente formulario con tus datos para que te notifiquemos por email cada vez que
+                        haya una nueva actividad de tu interés.</h2>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <form>
+                            <div class="form-row">
+                                <div class="form-group col-md-5">
+                                    <label for="inputNombre">Nombre:</label>
+                                    <input type="text" class="form-control" id="inputNombre" placeholder="Nombre">
+                                </div>
+                                <div class="form-group col-md-7">
+                                    <label for="inputApellidos">Apellidos:</label>
+                                    <input type="text" class="form-control" id="inputApellidos" placeholder="Apellidos">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="fechaNacimiento">Fecha de nacimiento:</label>
+                                    <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento">
+                                </div>
+                                <div class="form-group col-md-8">
+                                    <label for="email">Email:</label>
+                                    <input type="email" class="form-control" id="email" name="email"
+                                        placeholder="aaaa@aaaa.com">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <fieldset class="border border-secondary rounded">
+                                        <div class="form-row">
+                                            <legend>Sexo:</legend>
+                                        </div>
+                                        <div class="form-row">
+                                            <div class="form-check col-md-12">
+                                                <input class="form-check-input" type="radio" name="sexo" id="hombre"
+                                                    value="Hombre">
+                                                <label class="form-check-label" for="hombre">
+                                                    Hombre
+                                                </label>
+                                            </div>
+                                            <div class="form-check col-md-12">
+                                                <input class="form-check-input" type="radio" name="sexo" id="mujer"
+                                                    value="Mujer">
+                                                <label class="form-check-label" for="mujer">
+                                                    Mujer
+                                                </label>
+                                            </div>
+                                            <div class="form-check col-md-12">
+                                                <input class="form-check-input" type="radio" name="sexo" id="noContesta"
+                                                    value="Nulo" checked>
+                                                <label class="form-check-label" for="noContesta">
+                                                    Prefiero no responder
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-8">
+                                    <div class="form-row">
+                                        <div class="form-group col-md-12">
+                                            <label for="telefono">Teléfono:</label>
+                                            <input type="tel" class="form-control" id="telefono" name="telefono"
+                                                placeholder="123456789" pattern="[0-9]{9}">
+                                        </div>
+                                    </div>
+                                    <div class="form-row">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="inputDireccion">Dirección:</label>
+                                <input type="text" class="form-control" id="inputDireccion" placeholder="Dirección">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="inputLocalidad">Localidad:</label>
+                                    <input type="text" class="form-control" id="inputLocalidad">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="inputPais">País:</label>
+                                    <input type="text" class="form-control" id="inputPais">
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="inputcodigo">C.P.:</label>
+                                    <input type="text" class="form-control" id="inputcodigo">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <fieldset class="border border-secondary rounded">
+                                        <legend class="form-row">Aficiones:</legend>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="aficiones" id="motor"
+                                                value="Motor">
+                                            <label class="form-check-label" for="motor">
+                                                Motor
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="aficiones"
+                                                id="deportes" value="Deportes">
+                                            <label class="form-check-label" for="deportes">
+                                                Deportes
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="aficiones" id="viajes"
+                                                value="Viajes">
+                                            <label class="form-check-label" for="viajes">
+                                                Viajes
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="aficiones"
+                                                id="gastronomia" value="Gastronomía">
+                                            <label class="form-check-label" for="gastronomia">
+                                                Gastronomía
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="aficiones"
+                                                id="cultura" value="Cultura">
+                                            <label class="form-check-label" for="cultura">
+                                                Cultura
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" name="aficiones"
+                                                id="fotografia" value="Fotografía">
+                                            <label class="form-check-label" for="fotografia">
+                                                Fotografía
+                                            </label>
+                                        </div>
+
+                                    </fieldset>
+                                </div>
+                            </div>
+                            <button type="reset" class="btn btn-primary">Borrar</button>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/rateYo/2.3.2/jquery.rateyo.min.js"></script>
+    <script src="../javascript/rateyo.js"></script>
+    <script src="../javascript/SitiosYActividades.js"></script>
+</body>
+
+</html>
