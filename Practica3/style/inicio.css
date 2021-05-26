@@ -92,3 +92,8 @@ p {
 caption {
     text-indent:-999em
 }
+
+.oculto {
+    position: absolute;
+    text-indent:-999em;
+}
