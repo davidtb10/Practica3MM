@@ -20,13 +20,8 @@ body {
     margin-bottom: 0;
 }
 
-.separador {
-    size: 2px;
-    color: black;
-}
-
 p {
-    text-align: justify;
+    text-align: left;
 }
 
 
@@ -39,23 +34,6 @@ p {
     background-color: #d5d5d5;
 }
 
-.info {
-    padding: 40px 0 40px 0;
-    display: inline-flex;
-}
-
-.informacion table {
-    margin-top: 40px;
-}
-
-caption {
-    text-indent:-999em
-}
-
-.oculto {
-    position: absolute;
-    text-indent:-999em;
-}
 
 .contenido {
     font-size: 115%;
