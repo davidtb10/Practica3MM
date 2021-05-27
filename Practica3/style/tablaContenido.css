@@ -1,0 +1,62 @@
+body {
+    text-align: center;
+}
+
+#tituloNavbar {
+    color: crimson;
+    font-size: 45px;
+}
+
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.titulo {
+    background-color: crimson;
+    text-align: center;
+    padding: 7px;
+    margin-bottom: 0;
+}
+
+.separador {
+    size: 2px;
+    color: black;
+}
+
+p {
+    text-align: justify;
+}
+
+
+.list {
+    text-align: left;
+    display: inline-block;
+}
+
+.principal {
+    background-color: #d5d5d5;
+}
+
+.info {
+    padding: 40px 0 40px 0;
+    display: inline-flex;
+}
+
+.informacion table {
+    margin-top: 40px;
+}
+
+caption {
+    text-indent:-999em
+}
+
+.oculto {
+    position: absolute;
+    text-indent:-999em;
+}
+
+.contenido {
+    font-size: 115%;
+}
