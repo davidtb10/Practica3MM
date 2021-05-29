@@ -77,26 +77,10 @@ body{
     padding-left: 3px;
 }
 
-
 .list {
     text-align: left;
     margin-left: 50px;
     margin-right: 50px;
-}
-.rating{
-    margin:10px auto;
-}
-.ratingIndividual{
-    margin-left: 0;
-}
-.user{
-    text-align: left;
-}
-.center{
-    font-family: "Comic Sans MS";
-}
-.card-body{
-    text-align: justify;
 }
 
 caption {
