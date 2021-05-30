@@ -43,3 +43,8 @@ p {
     font-size: 115%;
     margin:2%;
 }
+
+.oculto {
+    position: absolute;
+    text-indent:-999em;
+}
