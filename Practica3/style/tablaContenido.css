@@ -23,7 +23,10 @@ body {
 p {
     text-align: left;
 }
-
+.content-table{
+    display:inline-grid;
+    
+}
 
 .list {
     text-align: left;
@@ -32,9 +35,11 @@ p {
 
 .principal {
     background-color: #d5d5d5;
+    padding-bottom:5%;
 }
 
 
 .contenido {
     font-size: 115%;
+    margin:2%;
 }

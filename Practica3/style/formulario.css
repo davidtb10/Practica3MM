@@ -5,3 +5,14 @@ legend {
 .ayuda {
     font-size: 85%;
 }
+#formCheckbox{
+    margin:auto;
+}
+.form-check{
+    margin-left:15%;
+}
+.field-Checkbox{
+    display:inline;
+    padding:2%;
+    text-align: left;
+}

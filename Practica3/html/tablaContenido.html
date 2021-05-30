@@ -2,7 +2,7 @@
 <html lang=“es”>
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabla de contenido</title>
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -11,11 +11,11 @@
 </head>
 
 <body>
-    <nav title="Menú horizontal" class="navbar navbar-expand navbar-dark bg-dark">
+    <nav title="Menú horizontal" class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
             <a class="navbar-brand" id='tituloNavbar' href="index.html">V I G O</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
@@ -41,11 +41,13 @@
                         </div>
                     </li>
                     <li class="nav-item active">
-                        <a class="nav-link" href="tablaContenido.html"><span class="oculto">Navegar a </span>Tabla de
+                        <a class="nav-link" href="tablaContenido.html"><span class="oculto">Navegar a </span>Tabla
+                            de
                             contenido<span class="sr-only">(current)</span></a>
                     </li>
                 </ul>
             </div>
+        </div>
         </div>
     </nav>
 
@@ -55,29 +57,41 @@
         <br>
         <div class="row">
             <div class="col">
-                <p class="text-center">Desde la siguiente página podrás ver y acceder a todo el contenido del sitio web.</p>
+                <p class="text-center">Desde la siguiente página podrás ver y acceder a todo el contenido del sitio web.
+                </p>
             </div>
         </div>
         <div class="row">
             <div class="col">
-                <ul class="list list-unstyled contenido">
-                    <li><a href="index.html" title="Navegar a la sección de Inicio"><u>Inicio</u></a></li>
-                    <li>
-                        <p>Actividades</p>
-                        <ul class="list">
-                            <li><a href="survival.html" title="Navegar a la sección de la actividad Survival Human"><u>Survival Human</u></a></li>
-                            <li><a href="automovil.html" title="Navegar a la sección de la actividad XXX Salón del automóvil de Vigo"><u>XXX Salón del automóvil de Vigo</u></a></li>
-                            <li><a href="nacion.html" title="Navegar a la sección de la actividad Vigo Nación!"><u>Vigo Nación!</u></a></li>
-                        </ul>
-                        <p><a href="formulario.html" title="Navegar a la sección de Suscripción a servicio de alerta de nuevas actividades"><u>Suscripción a servicio de alertas de nuevas actividades</u></a></p>
-                    </li>
-                    <li><a href="tablaContenido.html" title="Navegar a la sección de Tabla de Contenido"><u>Tabla de contenido</u></a></li>
-                </ul>
+                <div class="content-table">
+                    <ul class="list list-unstyled contenido">
+                        <li><a href="index.html" title="Navegar a la sección de Inicio"><u>Inicio</u></a></li>
+                        <li>
+                            <p>Actividades</p>
+                            <ul class="list">
+                                <li><a href="survival.html"
+                                        title="Navegar a la sección de la actividad Survival Human"><u>Survival
+                                            Human</u></a></li>
+                                <li><a href="automovil.html"
+                                        title="Navegar a la sección de la actividad XXX Salón del automóvil de Vigo"><u>XXX
+                                            Salón del automóvil de Vigo</u></a></li>
+                                <li><a href="nacion.html"
+                                        title="Navegar a la sección de la actividad Vigo Nación!"><u>Vigo
+                                            Nación!</u></a></li>
+                            </ul>
+                            <p><a href="formulario.html"
+                                    title="Navegar a la sección de Suscripción a servicio de alerta de nuevas actividades"><u>Suscripción
+                                        a servicio de alertas de nuevas actividades</u></a></p>
+                        </li>
+                        <li><a href="tablaContenido.html" title="Navegar a la sección de Tabla de Contenido"><u>Tabla de
+                                    contenido</u></a></li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
-
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"></script>
+    <script src="../javascript/formulario.js"></script>
 </body>
