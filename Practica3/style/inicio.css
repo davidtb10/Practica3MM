@@ -3,7 +3,7 @@ body {
 }
 
 #tituloNavbar {
-    color: crimson;
+    color: white;
     font-size: 45px;
 }
 
@@ -17,7 +17,7 @@ body {
 }
 
 .titulo {
-    background-color: crimson;
+    background-color: white;
     text-align: center;
     padding: 7px;
     margin-bottom: 0;
@@ -55,7 +55,9 @@ p {
     text-align: left;
     display: inline-block;
 }
-
+.Ini{
+    color: white;
+}
 .principal {
     background-color: #d5d5d5;
 }
