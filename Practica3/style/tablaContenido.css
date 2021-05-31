@@ -32,6 +32,9 @@ p {
     border-color: black;
     border-radius: 10px;
 }
+.link{
+    color:#1a0dab;
+}
 .list {
     text-align: left;
     display: inline-block;

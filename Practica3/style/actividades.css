@@ -30,6 +30,9 @@ body{
     border-color: black;
     border-radius: 10px;
 }
+.link{
+    color:#1a0dab;
+}
 .place-text{
     text-align: left;
     margin-left: 50px;
