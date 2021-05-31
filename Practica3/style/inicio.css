@@ -2,7 +2,7 @@ body {
     text-align: center;
 }
 
-#tituloNavbar {
+.tituloNavbar {
     color: white;
     font-size: 45px;
 }
