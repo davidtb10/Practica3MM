@@ -5,11 +5,11 @@ body{
 }
 
 #tituloNavbar {
-    color: crimson;
+    color: white;
     font-size: 45px;
 }
 .titulo {
-    background-color: crimson;
+    background-color: white;
     text-align: center;
     padding: 7px;
     margin-bottom: 0;
@@ -21,7 +21,7 @@ body{
 }
 
 .place-title {
-    color: crimson;
+    color: #343a40;
     text-align: center;
     padding-top: 5px;
 }
@@ -52,11 +52,11 @@ body{
 
 
 .horario {
-    color: crimson;
+    color: white;
     text-align: center;
 }
 .precio{
-    color: crimson;
+    color: white;
     text-align: center;
 }
 
