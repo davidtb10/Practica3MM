@@ -95,6 +95,7 @@ p {
 }
 
 caption {
+    position: absolute;
     text-indent:-999em
 }
 
