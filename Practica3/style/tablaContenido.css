@@ -27,7 +27,11 @@ p {
     display:inline-grid;
     
 }
-
+.url-link{
+    background-color: white;
+    border-color: black;
+    border-radius: 10px;
+}
 .list {
     text-align: left;
     display: inline-block;
