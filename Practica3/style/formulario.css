@@ -1,7 +1,15 @@
 legend {
     font-size: 100%;
 }
-
+a.notCurrentPage.nav-link.dropdown-toggle {
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link.notCurrentPage{
+    color:white;
+}
+.currentPage{
+    text-decoration: underline;
+}
 .ayuda {
     font-size: 85%;
 }

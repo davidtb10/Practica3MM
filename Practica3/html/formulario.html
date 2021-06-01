@@ -15,7 +15,7 @@
 
     <nav title="Menú horizontal" class="navbar navbar-expand-md navbar-dark bg-dark">
         <div class="container">
-            <h1 class="navbar-brand tituloNavbar" >V I G O</h1>
+            <h1 class="navbar-brand tituloNavbar">V I G O</h1>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -23,229 +23,231 @@
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="../index.html"><span class="oculto">Navegar a </span>Inicio</a>
+                        <a class="nav-link notCurrentPage" href="../index.html"><span class="oculto">Navegar a </span>Inicio</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarSitios" role="button"
+                        <a class="nav-link dropdown-toggle currentPage" href="#"  role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Actividades
                         </a>
-                        <div class="dropdown-menu" >
-                            <a class="dropdown-item" href="survival.html" lang="en"><span class="oculto">Navegar a
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item notCurrentPage" href="survival.html" lang="en"><span class="oculto">Navegar a
                                 </span><span lang="en">Survival Human</span></a>
-                            <a class="dropdown-item" href="automovil.html"><span class="oculto">Navegar a </span>XXX
+                            <a class="dropdown-item notCurrentPage" href="automovil.html"><span class="oculto">Navegar a </span>XXX
                                 Salón del automóvil de Vigo</a>
-                            <a class="dropdown-item" href="nacion.html"><span class="oculto">Navegar a </span>Vigo
+                            <a class="dropdown-item notCurrentPage" href="nacion.html"><span class="oculto">Navegar a </span>Vigo
                                 Nación!</a>
                             <div class="dropdown-divider"></div>
-                            <a class="dropdown-item active" href="formulario.html"><span class="oculto">Navegar a
+                            <a class="dropdown-item active currentPage" href="formulario.html"><span class="oculto">Navegar a
                                 </span>Servicio de alertas de nuevas
                                 actividades<span class="sr-only">(current)</span></a>
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="tablaContenido.html"><span class="oculto">Navegar a </span>Tabla de
+                        <a class="nav-link notCurrentPage" href="tablaContenido.html"><span class="oculto">Navegar a </span>Tabla de
                             contenido</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <main>
+        <h2 class="titulo"><strong>Servicio de alertas de nuevas actividades</strong></h2>
 
-    <h2 class="titulo"><strong>Servicio de alertas de nuevas actividades</strong></h2>
+        <div class="container principal">
+            <br>
+            <div class=' row'>
+                <div class="col">
+                    <h3 class="place-title" lang="en"><strong>Formulario</strong></h3>
+                    <div class=' row'>
+                        <p>Rellena el siguiente formulario con tus datos para que te notifiquemos por email cada vez que
+                            haya una nueva actividad de tu interés.</p>
+                        <p>Nota: [*] indica un campo obligatorio.</p>
+                    </div>
+                    <div id="errors" class="text-danger" role="alert" aria-atomic="true"></div>
+                    <div class="row">
+                        <div class="col">
+                            <form>
+                                <div class="form-row">
+                                    <div class="form-group col-md-4">
+                                        <label for="inputNombre">Nombre: [*]</label>
+                                        <input type="text" class="form-control" id="inputNombre" placeholder="Nombre"
+                                            aria-required="true">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputApellidos">Apellidos: [*]</label>
+                                        <input type="text" class="form-control" id="inputApellidos"
+                                            placeholder="Apellidos" aria-required="true">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <fieldset>
+                                            <div class="form-row">
+                                                <legend>Fecha de nacimiento (dd/mm/aaaa): [*]</legend>
+                                            </div>
+                                            <div class="form-row">
+                                                <div class="form-group col-md-3">
+                                                    <input type="text" class="form-control" id="inputDia" name="dia"
+                                                        title="Día (dos dígitos)" placeholder="dd"
+                                                        aria-describedby="descripcionFecha" aria-required="true">
+                                                </div>
+                                                <div class="form-group col-md-3">
+                                                    <input type="text" class="form-control" id="inputMes" name="mes"
+                                                        title="Mes (dos dígitos)" placeholder="mm"
+                                                        aria-describedby="descripcionFecha" aria-required="true">
+                                                </div>
+                                                <div class="form-group col-md-6">
+                                                    <input type="text" class="form-control" id="inputAnio" name="anio"
+                                                        title="Año (cuatro dígitos)" placeholder="aaaa"
+                                                        aria-describedby="descripcionFecha" aria-required="true">
+                                                </div>
+                                            </div>
+                                            <div class="form-row">
+                                                <p id="descripcionFecha" class="ayuda">Por ejemplo: 12/03/2000</p>
+                                            </div>
+                                        </fieldset>
+                                    </div>
 
-    <div class="container principal">
-        <br>
-        <div class=' row'>
-            <div class="col">
-                <h3 class="place-title" lang="en"><strong>Formulario</strong></h3>
-                <div class=' row'>
-                    <p>Rellena el siguiente formulario con tus datos para que te notifiquemos por email cada vez que
-                        haya una nueva actividad de tu interés.</p>
-                    <p>Nota: [*] indica un campo obligatorio.</p>
-                </div>
-                <div id="errors" class="text-danger" role="alert" aria-atomic="true"></div>
-                <div class="row">
-                    <div class="col">
-                        <form>
-                            <div class="form-row">
-                                <div class="form-group col-md-4">
-                                    <label for="inputNombre">Nombre: [*]</label>
-                                    <input type="text" class="form-control" id="inputNombre" placeholder="Nombre"
-                                        aria-required="true">
                                 </div>
-                                <div class="form-group col-md-4">
-                                    <label for="inputApellidos">Apellidos: [*]</label>
-                                    <input type="text" class="form-control" id="inputApellidos" placeholder="Apellidos"
-                                        aria-required="true">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <fieldset>
-                                        <div class="form-row">
-                                            <legend>Fecha de nacimiento (dd/mm/aaaa): [*]</legend>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="form-group col-md-3">
-                                                <input type="text" class="form-control" id="inputDia" name="dia"
-                                                    title="Día (dos dígitos)" placeholder="dd"
-                                                    aria-describedby="descripcionFecha" aria-required="true">
-                                            </div>
-                                            <div class="form-group col-md-3">
-                                                <input type="text" class="form-control" id="inputMes" name="mes"
-                                                    title="Mes (dos dígitos)" placeholder="mm"
-                                                    aria-describedby="descripcionFecha" aria-required="true">
-                                            </div>
-                                            <div class="form-group col-md-6">
-                                                <input type="text" class="form-control" id="inputAnio" name="anio"
-                                                    title="Año (cuatro dígitos)" placeholder="aaaa"
-                                                    aria-describedby="descripcionFecha" aria-required="true">
-                                            </div>
-                                        </div>
-                                        <div class="form-row">
-                                            <p id="descripcionFecha" class="ayuda">Por ejemplo: 12/03/2000</p>
-                                        </div>
-                                    </fieldset>
-                                </div>
+                                <div class="form-row">
 
-                            </div>
-                            <div class="form-row">
-
-                                <div class="form-group col-md-6 formCheckbox" >
-                                    <fieldset class="border border-secondary rounded field-Checkbox">
-                                        <div class="form-row">
-                                            <legend><strong>Sexo:</strong></legend>
-                                        </div>
-                                        <div class="form-row">
-                                            <div class="form-check col-md-12">
-                                                <input class="form-check-input" type="radio" name="sexo" id="hombre"
-                                                    value="Hombre">
-                                                <label class="form-check-label" for="hombre">
-                                                    Hombre
-                                                </label>
+                                    <div class="form-group col-md-6 formCheckbox">
+                                        <fieldset class="border border-secondary rounded field-Checkbox">
+                                            <div class="form-row">
+                                                <legend><strong>Sexo:</strong></legend>
                                             </div>
-                                            <div class="form-check col-md-12">
-                                                <input class="form-check-input" type="radio" name="sexo" id="mujer"
-                                                    value="Mujer">
-                                                <label class="form-check-label" for="mujer">
-                                                    Mujer
-                                                </label>
-                                            </div>
-                                            <div class="form-check col-md-12">
-                                                <input class="form-check-input" type="radio" name="sexo" id="noContesta"
-                                                    value="Nulo" checked>
-                                                <label class="form-check-label" for="noContesta">
-                                                    Prefiero no responder
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </fieldset>
-                                </div>
-                                <div class="form-group col-md-6 formCheckbox">
-                                    <fieldset class="border border-secondary rounded field-Checkbox">
-                                        <div class="form-row">
-                                            <legend><strong>Aficiones:</strong></legend>
-                                            <div class="form-col">
-                                                <div class="form-check ">
-                                                    <input class="form-check-input" type="checkbox" name="aficiones"
-                                                        id="motor" value="Motor">
-                                                    <label class="form-check-label" for="motor">
-                                                        Motor
+                                            <div class="form-row">
+                                                <div class="form-check col-md-12">
+                                                    <input class="form-check-input" type="radio" name="sexo" id="hombre"
+                                                        value="Hombre">
+                                                    <label class="form-check-label" for="hombre">
+                                                        Hombre
                                                     </label>
                                                 </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" name="aficiones"
-                                                        id="deportes" value="Deportes">
-                                                    <label class="form-check-label" for="deportes">
-                                                        Deportes
+                                                <div class="form-check col-md-12">
+                                                    <input class="form-check-input" type="radio" name="sexo" id="mujer"
+                                                        value="Mujer">
+                                                    <label class="form-check-label" for="mujer">
+                                                        Mujer
                                                     </label>
                                                 </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" name="aficiones"
-                                                        id="viajes" value="Viajes">
-                                                    <label class="form-check-label" for="viajes">
-                                                        Viajes
+                                                <div class="form-check col-md-12">
+                                                    <input class="form-check-input" type="radio" name="sexo"
+                                                        id="noContesta" value="Nulo" checked>
+                                                    <label class="form-check-label" for="noContesta">
+                                                        Prefiero no responder
                                                     </label>
                                                 </div>
                                             </div>
-                                            <div class="form-col">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" name="aficiones"
-                                                        id="gastronomia" value="Gastronomía">
-                                                    <label class="form-check-label" for="gastronomia">
-                                                        Gastronomía
-                                                    </label>
+                                        </fieldset>
+                                    </div>
+                                    <div class="form-group col-md-6 formCheckbox">
+                                        <fieldset class="border border-secondary rounded field-Checkbox">
+                                            <div class="form-row">
+                                                <legend><strong>Aficiones:</strong></legend>
+                                                <div class="form-col">
+                                                    <div class="form-check ">
+                                                        <input class="form-check-input" type="checkbox" name="aficiones"
+                                                            id="motor" value="Motor">
+                                                        <label class="form-check-label" for="motor">
+                                                            Motor
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" name="aficiones"
+                                                            id="deportes" value="Deportes">
+                                                        <label class="form-check-label" for="deportes">
+                                                            Deportes
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" name="aficiones"
+                                                            id="viajes" value="Viajes">
+                                                        <label class="form-check-label" for="viajes">
+                                                            Viajes
+                                                        </label>
+                                                    </div>
                                                 </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" name="aficiones"
-                                                        id="cultura" value="Cultura">
-                                                    <label class="form-check-label" for="cultura">
-                                                        Cultura
-                                                    </label>
-                                                </div>
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" name="aficiones"
-                                                        id="fotografia" value="Fotografía">
-                                                    <label class="form-check-label" for="fotografia">
-                                                        Fotografía
-                                                    </label>
+                                                <div class="form-col">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" name="aficiones"
+                                                            id="gastronomia" value="Gastronomía">
+                                                        <label class="form-check-label" for="gastronomia">
+                                                            Gastronomía
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" name="aficiones"
+                                                            id="cultura" value="Cultura">
+                                                        <label class="form-check-label" for="cultura">
+                                                            Cultura
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" name="aficiones"
+                                                            id="fotografia" value="Fotografía">
+                                                        <label class="form-check-label" for="fotografia">
+                                                            Fotografía
+                                                        </label>
+                                                    </div>
                                                 </div>
                                             </div>
-                                        </div>
 
-                                    </fieldset>
+                                        </fieldset>
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="form-row">
+                                <div class="form-row">
 
-                                <div class="form-group col-md-9">
-                                    <label for="inputEmail">Email: [*]</label>
-                                    <input type="email" class="form-control" id="inputEmail" name="email"
-                                        placeholder="aaaa@aaaa.com" aria-required="true"
-                                        aria-describedby="descripcionEmail">
-                                    <p id="descripcionEmail" class="ayuda">Por ejemplo: ejemplo@gmail.com</p>
+                                    <div class="form-group col-md-9">
+                                        <label for="inputEmail">Email: [*]</label>
+                                        <input type="email" class="form-control" id="inputEmail" name="email"
+                                            placeholder="aaaa@aaaa.com" aria-required="true"
+                                            aria-describedby="descripcionEmail">
+                                        <p id="descripcionEmail" class="ayuda">Por ejemplo: ejemplo@gmail.com</p>
+                                    </div>
+                                    <div class="form-group col-md-3">
+                                        <label for="inputTelefono">Teléfono:</label>
+                                        <input type="tel" class="form-control" id="inputTelefono" name="telefono"
+                                            placeholder="123456789">
+                                    </div>
                                 </div>
-                                <div class="form-group col-md-3">
-                                    <label for="inputTelefono">Teléfono:</label>
-                                    <input type="tel" class="form-control" id="inputTelefono" name="telefono"
-                                        placeholder="123456789">
+                                <div class="form-group">
+                                    <label for="inputDireccion">Dirección:</label>
+                                    <input type="text" class="form-control" id="inputDireccion"
+                                        placeholder="Dirección completa (calle, número, portal... etc)">
                                 </div>
-                            </div>
-                            <div class="form-group">
-                                <label for="inputDireccion">Dirección:</label>
-                                <input type="text" class="form-control" id="inputDireccion"
-                                    placeholder="Dirección completa (calle, número, portal... etc)">
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group col-md-6">
-                                    <label for="inputLocalidad">Localidad:</label>
-                                    <input type="text" class="form-control" id="inputLocalidad" placeholder="Localidad">
+                                <div class="form-row">
+                                    <div class="form-group col-md-6">
+                                        <label for="inputLocalidad">Localidad:</label>
+                                        <input type="text" class="form-control" id="inputLocalidad"
+                                            placeholder="Localidad">
+                                    </div>
+                                    <div class="form-group col-md-4">
+                                        <label for="inputPais">País:</label>
+                                        <input type="text" class="form-control" id="inputPais" placeholder="País">
+                                    </div>
+                                    <div class="form-group col-md-2">
+                                        <label for="inputcodigo">C.P.:</label>
+                                        <input type="text" class="form-control" id="inputcodigo"
+                                            placeholder="Código postal" aria-describedby="descripcionCP">
+                                        <p id="descripcionCP" class="ayuda">Por ejemplo: 28880</p>
+                                    </div>
                                 </div>
-                                <div class="form-group col-md-4">
-                                    <label for="inputPais">País:</label>
-                                    <input type="text" class="form-control" id="inputPais" placeholder="País">
-                                </div>
-                                <div class="form-group col-md-2">
-                                    <label for="inputcodigo">C.P.:</label>
-                                    <input type="text" class="form-control" id="inputcodigo" placeholder="Código postal"
-                                        aria-describedby="descripcionCP">
-                                    <p id="descripcionCP" class="ayuda">Por ejemplo: 28880</p>
-                                </div>
-                            </div>
-                            <div class="form-row">
+                                <div class="form-row">
 
-                            </div>
-                            <button type="reset" class="btn btn-primary" id="btnVaciar" name="restablecer">Vaciar</button>
-                            <button type="submit" class="btn btn-primary" id="btnEnviar" name="enviar">Enviar</button>
-                        </form>
-                        <br>
+                                </div>
+                                <button type="reset" class="btn btn-primary" id="btnVaciar"
+                                    name="restablecer">Vaciar</button>
+                                <button type="submit" class="btn btn-primary" id="btnEnviar"
+                                    name="enviar">Enviar</button>
+                            </form>
+                            <br>
+                        </div>
                     </div>
                 </div>
             </div>
+
         </div>
-
-    </div>
-
-
+    </main>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/rough-notation/lib/rough-notation.iife.js"></script>

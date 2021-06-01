@@ -22,7 +22,15 @@ body {
     padding: 7px;
     margin-bottom: 0;
 }
-
+a.notCurrentPage.nav-link.dropdown-toggle {
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link.notCurrentPage{
+    color:white;
+}
+.currentPage{
+    text-decoration: underline;
+}
 .separador {
     color: black;
 }

@@ -83,7 +83,16 @@ body{
 .col3 {
     padding-left: 3px;
 }
-
+a.notCurrentPage.nav-link.dropdown-toggle {
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link.notCurrentPage{
+    color:white;
+}
+.navbar-dark .navbar-nav .nav-link.currentPage{
+    color:white;
+    text-decoration: underline;
+}
 .list {
     text-align: left;
     margin-left: 50px;

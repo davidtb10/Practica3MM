@@ -44,7 +44,15 @@ p {
     background-color: #d5d5d5;
     padding-bottom:5%;
 }
-
+a.notCurrentPage.nav-link.dropdown-toggle {
+    color: white;
+}
+.navbar-dark .navbar-nav .nav-link.notCurrentPage{
+    color:white;
+}
+.currentPage{
+    text-decoration: underline;
+}
 
 .contenido {
     font-size: 115%;
