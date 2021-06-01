@@ -5,13 +5,7 @@ const a = document.querySelector('#consiguen');
 const annotation1 = annotate1(a, { type: 'underline', color: 'crimson', padding: 5});
 annotation1.show();
 
-const b = document.querySelector('.Ini');
-const annotation2 = annotate1(b, { type: 'highlight', color: '#343a40', padding: 10});
-annotation2.show();
 
-const c = document.querySelector('.vigoteespera');
-const annotation3 = annotate1(c, { type: 'highlight', color: '#343a40', padding: 10});
-annotation3.show();
 
 const d = document.querySelector('.ciudadvigo');
 const annotation4 = annotate1(d, { type: 'box', color: 'crimson', padding: 5});
