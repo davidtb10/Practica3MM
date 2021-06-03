@@ -63,3 +63,8 @@ a.notCurrentPage.nav-link.dropdown-toggle {
     position: absolute;
     text-indent:-999em;
 }
+
+.nivelConformidad {
+    width: 10%;
+    height: 10%;
+}

@@ -33,3 +33,8 @@ a.notCurrentPage.nav-link.dropdown-toggle {
     background-color: black;
     border-color: black;
 }
+
+.nivelConformidad {
+    width: 10%;
+    height: 10%;
+}
